@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="chat-list">
+        <div class="chat-header">
+            <span>All Chats</span>
+        </div>
+        <div class="chat-list-all" id="chatList">
+
+        </div>
+    </div>
+    <div class="chat">
+        <div class="chat-header">
+            <span>Chat</span>
+        </div>
+        <ul class="messages">
+            <!--        <li><span>Oleg</span>hi</li>-->
+            <!--        <li><span>Oleg</span>hi</li>-->
+            <!--        <li><span>Oleg</span>hi</li>-->
+        </ul>
+        <form class="form">
+            <div class="name">Oleg</div>
+            <input type="text" class="input">
+            <button class="btn">Send</button>
+        </form>
+    </div>
+</div>
+
+<!--<div id="parentDiv">-->
+<!--    <div class="childDiv">Первый дочерний div</div>-->
+<!--    <div class="childDiv">Второй дочерний div</div>-->
+<!--    <div class="childDiv">Третий дочерний div</div>-->
+<!--</div>-->
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
