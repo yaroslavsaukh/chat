@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const morgan = require('morgan')
 const chatsRouter = require('./routers/chatsRouter')
 const dotenv = require('dotenv').config()
-
+const cors = require('cors')
 const PORT = process.env.PORT
 const DB_URL = process.env.DB_URL
 
@@ -15,6 +15,7 @@ app.use(express.static('assets'))
 app.use(morgan("combined"))
 app.use('/chats', chatsRouter)
 require('./handlers/main')(io)
+app.use(cors())
 
 async function startApp() {
     try {

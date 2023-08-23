@@ -11,7 +11,7 @@ nameBlock.innerHTML = `${userName}`
 let roomId = ''
 
 async function allChats() {
-    const chats = await fetch('http://localhost:5000/chats/all-rooms')
+    const chats = await fetch('http://localhost:8080/chats/all-rooms')
     if (chats.ok) {
         return chats.json();
     } else {
